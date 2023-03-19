@@ -28,6 +28,6 @@ printf(" is positive\n");
 else
 {
 printf("%d", n);
-printf(" is zero"); }
+printf(" is zero\n"); }
 return (0);
 }
