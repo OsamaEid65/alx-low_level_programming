@@ -3,8 +3,8 @@
  *
  * Return: Always 0 (Success)
  */
-#include <stdio.h>
-int print_alphabet(void)
+#include <main.h>
+void print_alphabet(void);
 {
 int i = 97;
 while (i <= 122)
