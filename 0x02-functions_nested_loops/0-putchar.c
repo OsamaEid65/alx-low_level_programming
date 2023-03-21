@@ -4,7 +4,6 @@
  * Return: Always 0 (Success)
  */
 #include <stdio.h>
-#include <main.h>
 int main(void)
 {
 putchar (48 + 47);
