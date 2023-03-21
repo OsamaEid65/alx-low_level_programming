@@ -3,15 +3,16 @@
  * print_alphabet_x10 - prints 10 times the alphabet, in lowercase
  */
 void print_alphabet_x10(void)
-
 {
-for (int c = 0; c < 10; c++)
+int c = 0;
+while (c < 10)
 {
 for (int i = 97; i <= 122; i++)
 {
-_putchar(i);
-_putchar ('\n');
+putchar(i);
 }
+c++;
+putchar ('\n');
 }
 }
 
