@@ -1,10 +1,9 @@
 #include "main.h"
 
-/*
- * factorial-this funcation is give the factoril
- * @n:is the number you wante the factorial
- * Return:return always zero
- * Description:good goood fuccation so goood goood 
+/**
+ * factorial - this funcation is give the factoril
+ * @n: is the number you wante the factorial
+ * Return: return always zero
  */
 
 int factorial(int n)
