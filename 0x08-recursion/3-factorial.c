@@ -1,4 +1,4 @@
-#include <main.h>
+#include "main.h"
 
 /*
  * factorial-this funcation is give the factoril
