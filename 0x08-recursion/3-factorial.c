@@ -4,6 +4,7 @@
  * factorial-this funcation is give the factoril
  * @n:is the number you wante the factorial
  * Return:return always zero
+ * Description:good goood fuccation so goood goood 
  */
 
 int factorial(int n)
