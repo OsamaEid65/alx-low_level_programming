@@ -1,5 +1,5 @@
 #include "main.h"
-#include "math.h"
+#include <math.h>
 
 /**
  *_pow_recursion - this fucation is pow
