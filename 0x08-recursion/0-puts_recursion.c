@@ -6,11 +6,9 @@
  */
 void _puts_recursion(char *s)
 {
-int i  = 0;
-while (*s != '\0' && i < 1)
+while (*s != '\0')
 {
-puts(s);
-i++;
+_putchar(*(s++));
 _putchar('\0');
 }
 }
