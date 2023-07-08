@@ -16,7 +16,9 @@ str = argv[i];
 }
 for (b = 0; b < argc; b++)
 {
-if (*str > 48)
+if (*str == 48)
+printf("0");
+else
 {
 counter += 1;
 }
