@@ -23,7 +23,7 @@ ptr = (char *)malloc(n *sizeof(char));
 if (ptr < str)
 return (NULL);
 do {
-ptr[i] = *(str + i);
+ptr[i] = str[i];
 i++;
 } while (i < n);
 return (ptr);
