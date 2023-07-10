@@ -4,6 +4,8 @@
  *@c: is good char and hrlthy dood a;
  *Return:return 0 always
  */
+#include <stdlib.h>
+#include <stdio.h>
 char *create_array(unsigned int size, char c)
 {
 char *ptr;
