@@ -12,7 +12,7 @@ char *ptr;
 char *a=str;
 if (str == 0)
 {
-return (0);
+return (NULL);
 }
 while (*a != '\n')
 {
@@ -21,7 +21,7 @@ n++;
 }
 ptr = (char *)malloc(n *sizeof(char));
 if (ptr < str)
-return (0);
+return (NULL);
 do {
 ptr[i] = *(str + i);
 i++;
