@@ -18,5 +18,5 @@ while (size--)
 {
 ptr[size] = c;
 }
-return (0);
+return (ptr);
 }
