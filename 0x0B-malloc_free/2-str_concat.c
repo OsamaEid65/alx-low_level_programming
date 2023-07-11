@@ -1,44 +1,42 @@
-/**
- * str_concat - this fucation good and betty 
- * @s1 : is good prameter good
- * @s2 : s d dponfo pfoe flgdfg
- * Return : return 0 always 
- */ 
-#include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
+/**
+ * str_concat - get ends of input and add together for size
+ * @s1: input one to concat
+ * @s2: input two to concat
+ * Return: concat of s1 and s2
+ */
 char *str_concat(char *s1, char *s2)
 {
-    char *counter1=&(*s1);
-    char *counter2=&(*s2);
-    int size1;
-    int size2;
-    int i ; 
-    int sumsize;
-    char * ptr;
-    while (*counter1!='\0')
-    {
-        counter1++;
-        size1++;
-    }
-     while (*counter2!='\0')
-    {
-        counter2++;
-        size2++;
-    }
-    
-    sumsize=size1+size2+1;
-    
-    ptr=(char *)malloc(sumsize*sizeof(char));
-    
-    for (i=0;i<size1;i++)
-    {
-        ptr[i]=s1[i];
-    }
-    for (i=0;i<size2;i++)
-    {
-        ptr[size1+i]=s2[i];
-    }
-    ptr[size1-1]=' ';
-    ptr[sumsize-1]='\0';
-    return (ptr);
+	char *conct;
+	int i, ci;
+
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
+	i = ci = 0;
+	while (s1[i] != '\0')
+		i++;
+	while (s2[ci] != '\0')
+		ci++;
+	conct = malloc(sizeof(char) * (i + ci + 1));
+
+	if (conct == NULL)
+		return (NULL);
+	i = ci = 0;
+	while (s1[i] != '\0')
+	{
+		conct[i] = s1[i];
+		i++;
+	}
+
+	while (s2[ci] != '\0')
+	{
+		conct[i] = s2[ci];
+		i++, ci++;
+	}
+	conct[i] = '\0';
+	return (conct);
 }
