@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <limits.h>
 #include <string.h>
+#include "main.h"
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 char *ptr = NULL;
